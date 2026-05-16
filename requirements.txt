@@ -1,0 +1,7 @@
+mistralai
+requests
+pytest
+fastapi
+uvicorn
+python-dotenv
+python-json-logger

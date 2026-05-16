@@ -1,0 +1,68 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "CrashedQA Mock Fintech API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/checkout": {
+      "post": {
+        "summary": "Process a checkout",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "user_id": {
+                    "type": "string"
+                  },
+                  "amount": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful checkout"
+          },
+          "500": {
+            "description": "Internal server error (potential SQLi)"
+          }
+        }
+      }
+    },
+    "/refund": {
+      "post": {
+        "summary": "Process a refund",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "amount",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful refund"
+          }
+        }
+      }
+    }
+  }
+}
