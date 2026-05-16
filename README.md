@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 # CrashedQA: Risk-Weighted QA Orchestration Agent
 
 CrashedQA is an AI-powered QA orchestration system that analyzes engineering context across multiple dimensions to compute a joint release risk score.
 
-## 🚀 Quick Start
+##  Quick Start
 
 1. **Install Dependencies:**
    ```bash
@@ -28,14 +27,14 @@ CrashedQA is an AI-powered QA orchestration system that analyzes engineering con
    python main.py
    ```
 
-## 🛠 Project Structure
+##  Project Structure
 
 - `core/`: Ingestion, Risk Brain, Dispatcher, and Evidence Compiler.
 - `agents/`: Specialist sub-agents (Security, Regression, etc.).
 - `mock_server/`: A mock API and legacy module with intentional flaws for the demo.
 - `main.py`: The central pipeline entry point.
 
-## 🧠 The Agent Reasoning Loop
+##  The Agent Reasoning Loop
 
 1. **Observe:** Ingests JIRA stories, GitHub diffs, and API specifications.
 2. **Reason:** The Risk Brain (Mistral) identifies high-risk modules and dimensions.
@@ -45,8 +44,6 @@ CrashedQA is an AI-powered QA orchestration system that analyzes engineering con
 ## 🏆 Hackathon Track
 
 **Track 11: Real-world QA Problem**
-(Fallback: Track 09 CI/CD & DevOps)
 =======
 # CrashedQA
 We are solving a problem starement at QA Fraternity
->>>>>>> 933d898bfe8ca731a38827ec1d060f01ec975a0a
