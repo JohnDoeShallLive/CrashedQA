@@ -41,7 +41,7 @@ CrashedQA is an AI-powered QA orchestration system that analyzes engineering con
 3. **Act:** The Dispatcher deploys sub-agents (e.g., SecurityAgent) to test and confirm risks.
 4. **Compile:** Merges findings into a single Release Verdict with a deterministic risk score.
 
-## 🏆 Hackathon Track
+##  Hackathon Track
 
 **Track 11: Real-world QA Problem**
 =======
